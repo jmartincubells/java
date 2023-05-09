@@ -14,7 +14,7 @@ import jakarta.persistence.Lob;
 public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    private int id;
     
     private String nombre;
     

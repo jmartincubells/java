@@ -34,6 +34,7 @@ public class CPersona {
     public Persona verPersona(@PathVariable int id){
         return sPersona.buscarPersona(id);
     }
+    
     @PostMapping ("/crear")
     public String agregarPersona (@RequestBody Persona persona){
         sPersona.crearPersona(persona);
