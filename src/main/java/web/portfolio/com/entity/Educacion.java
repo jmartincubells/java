@@ -1,4 +1,3 @@
-
 package web.portfolio.com.entity;
 
 import jakarta.persistence.Entity;
@@ -8,33 +7,42 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Educacion {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
-   //Atributos 
+    //Atributos 
+    private String imagen;
     private String institucion;
-    
+
     private String inicio;
     private String fin;
     private String especialidad;
     private String estado;
-    
-    //Constructores
 
+    //Constructores
     public Educacion() {
     }
 
-    public Educacion(String institucion, String inicio, String fin, String especialidad, String estado) {
+    public Educacion(String imagen, String institucion, String inicio, String fin, String especialidad, String estado) {
         this.institucion = institucion;
         this.inicio = inicio;
         this.fin = fin;
         this.especialidad = especialidad;
         this.estado = estado;
+        this.imagen = imagen;
     }
-    
+
     //Getters y Setters
-    
-public int getId() {
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
+    public int getId() {
         return id;
     }
 
@@ -81,8 +89,5 @@ public int getId() {
     public void setEstado(String estado) {
         this.estado = estado;
     }
-    
-    
 
 }
-

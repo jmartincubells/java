@@ -15,6 +15,7 @@ public class Experiencia {
      private String fin;
     private String empresa;
     private String tareas;
+    private String logo;
     
 
 
@@ -24,17 +25,24 @@ public class Experiencia {
     }
 //Constructor
 
-    public Experiencia(String puesto, String inicio, String fin, String empresa, String tareas) {
+    public Experiencia(String logo, String puesto, String inicio, String fin, String empresa, String tareas) {
         this.puesto = puesto;
         this.inicio = inicio;
         this.fin = fin;
         this.empresa = empresa;
         this.tareas = tareas;
+        this.logo = logo;
+    }
+    
+    //Getters y Setters
+    public String getLogo() {    
+        return logo;
     }
 
-    
-     //Getters y Setters
-    
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+
     public int getId() {
         return id;
     }
