@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("red") 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontend-baed7.web.app")
 
 public class CRed {
     @Autowired
