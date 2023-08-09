@@ -5,13 +5,14 @@
 
 package web.portfolio.com.security.Entity;
 
+import com.sun.istack.NotNull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotNull;
+// import jakarta.validation.constraints.NotNull;
 import web.portfolio.com.security.Enums.RolNombre;
 
 @Entity
